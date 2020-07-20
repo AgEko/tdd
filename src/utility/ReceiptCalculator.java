@@ -21,9 +21,9 @@ public class ReceiptCalculator {
         String roundedSubTotal = twoDigits.format(subTotal);
         String roundedTax = twoDigits.format(taxCalc.calculateTax(cart));
 
-        System.out.println(roundedSubTotal);
-        System.out.println(roundedTax);
-        System.out.println(roundedTotal);
+        System.out.println("Cart subtotal: " + roundedSubTotal);
+        System.out.println("Cart tax: " + roundedTax);
+        System.out.println("Cart Total: " + roundedTotal);
         return roundedTax;
     }
 }

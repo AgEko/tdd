@@ -21,10 +21,6 @@ public class TaxCalculator {
             taxTotal += (item.getPrice() * taxRate);
         }
 
-
-        //        todo This will format the double for printing format. Outputs a string
-//        DecimalFormat decimalLimitTwo = new DecimalFormat("#0.00");
-//        decimalLimitTwo.format(taxTotal);
         return Math.round(taxTotal * 20.0) / 20.0;
     }
 
