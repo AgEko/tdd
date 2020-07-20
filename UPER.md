@@ -6,21 +6,27 @@
 * R = "Reflect" / "Refactor"
 
 <h2>1. Understanding the Problem</h2>
-*
-*
-*
-*
-*
-*
+* Calculate the total of given "Product" objects.
+* Incorporate SOLID design
+* Print item name : price
+* Price += Tax @ .10% except books, food and exempt.
+* All imports are taxed @ 0.05% 
+* All tax is rounded to the nearest 0.05$
+*print total w/ tax. each item has raw value next to it.  subtotal + tax, then total.
 *
 *
 <h2>
     2. Planning the Solution
 </h2>
-*
-*
-*
-*
+* Test for each step using TDD
+* Need a receipt printOut 'ReceiptCalculator'
+* SubClass for handling tax/importTax(non-exemption)
+* Tests for
+-adding objects to a cart. 
+-stream from cart list
+-
+* For now need all inputs to be classes, refactor to pull from a .json after mvp
+*   
 *
 *
 *
@@ -28,8 +34,8 @@
 <h2>
     3. Executing the Plan
 </h2>
-*
-*
+* Made TaxCalculator w/o TDD.
+* Tax rate should be in TaxCalc, (each product holding their own is a waste.)
 *
 *
 *
